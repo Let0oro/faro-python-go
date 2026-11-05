@@ -9,13 +9,13 @@ sidebar:
 
 | Bloque | Duración | Objetivo | Lecciones |
 | --- | --- | --- | --- |
-| Laboratorio y entorno | 1–2 días | Preparar Python, Go y un flujo de pruebas reproducible | [Laboratorio](/faro-python-go/python/00-laboratorio/) |
-| Python: procesos | 1 semana | Leer snapshots, modelar procesos y ejecutar hijos con límites | [Procview](/faro-python-go/python/01-procview/), [Árbol](/faro-python-go/python/02-arbol-de-procesos/), [Procesos hijos](/faro-python-go/python/03-procesos-hijos/) |
-| Python: integridad y diagnóstico | 1 semana | Manifiestos reproducibles, logs y análisis local | [Integridad de archivos](/faro-python-go/python/04-integridad-archivos/), [Diagnóstico de logs](/faro-python-go/python/05-diagnostico-logs/) |
-| Go: fundamentos | 3–4 días | Tipos, control de flujo, errores y tests | [Primeros pasos](/faro-python-go/go/00-primeros-pasos/) |
-| Go: concurrencia | 1 semana | Goroutines, channels, contexto y contrapresión | [Red y concurrencia](/faro-python-go/go/01-red-y-concurrencia/), [Pool](/faro-python-go/go/03-pool-trabajadores/) |
-| Go: HTTP local | 1 semana | Handlers, límites, timeouts y apagado | [Servicio local](/faro-python-go/go/02-servicio-local/), [HTTP robusto](/faro-python-go/go/04-http-robusto/) |
-| Proyecto final | 1–2 semanas | Servicio local, diagnóstico y prueba final | [Capstone final](/faro-python-go/guia/capstone/), [Capstone Go](/faro-python-go/go/05-capstone/) |
+| Laboratorio y entorno | 1–2 días | Preparar Python, Go y un flujo de pruebas reproducible | [Laboratorio](/python/00-laboratorio/) |
+| Python: procesos | 1 semana | Leer snapshots, modelar procesos y ejecutar hijos con límites | [Procview](/python/01-procview/), [Árbol](/python/02-arbol-de-procesos/), [Procesos hijos](/python/03-procesos-hijos/) |
+| Python: integridad y diagnóstico | 1 semana | Manifiestos reproducibles, logs y análisis local | [Integridad de archivos](/python/04-integridad-archivos/), [Diagnóstico de logs](/python/05-diagnostico-logs/) |
+| Go: fundamentos | 3–4 días | Tipos, control de flujo, errores y tests | [Primeros pasos](/go/00-primeros-pasos/) |
+| Go: concurrencia | 1 semana | Goroutines, channels, contexto y contrapresión | [Red y concurrencia](/go/01-red-y-concurrencia/), [Pool](/go/03-pool-trabajadores/) |
+| Go: HTTP local | 1 semana | Handlers, límites, timeouts y apagado | [Servicio local](/go/02-servicio-local/), [HTTP robusto](/go/04-http-robusto/) |
+| Proyecto final | 1–2 semanas | Servicio local, diagnóstico y prueba final | [Capstone final](/guia/capstone/), [Capstone Go](/go/05-capstone/) |
 
 ## Objetivos de dominio
 
