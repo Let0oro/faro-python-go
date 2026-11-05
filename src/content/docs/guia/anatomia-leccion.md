@@ -1,6 +1,6 @@
 ---
 title: Anatomía de una lección
- description: Estructura común del campus Faro para practicar, consultar pistas, revisar soluciones y evaluar dominio.
+description: Estructura común del campus Faro para practicar, consultar pistas, revisar soluciones y evaluar dominio.
 sidebar:
   order: 1
 ---
@@ -37,7 +37,7 @@ Cierra cada lección con:
 
 - tests de contrato y casos límite;
 - comando de ejecución reproducible;
-- autoevaluación con la [rúbrica del campus](/guia/evaluacion/);
+- autoevaluación con la [rúbrica del campus](/faro-python-go/guia/evaluacion/);
 - una nota breve: hipótesis inicial, fallo encontrado y decisión final.
 
 ### Plantilla para una nueva misión

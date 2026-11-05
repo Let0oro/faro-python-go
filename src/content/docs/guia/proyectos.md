@@ -68,4 +68,4 @@ Integra un recolector local de eventos sintéticos, un proceso de análisis Pyth
 
 ## Presentación de cada proyecto
 
-Usa la [rúbrica de evaluación](/guia/evaluacion/) y adjunta tres evidencias: salida de tests, una ejecución reproducible y una nota breve de decisiones. No subas logs reales, tokens, dumps privados ni capturas con datos personales.
+Usa la [rúbrica de evaluación](/faro-python-go/guia/evaluacion/) y adjunta tres evidencias: salida de tests, una ejecución reproducible y una nota breve de decisiones. No subas logs reales, tokens, dumps privados ni capturas con datos personales.

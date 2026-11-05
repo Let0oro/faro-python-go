@@ -1,6 +1,6 @@
 ---
 title: Evaluación y progreso
- description: Rúbrica, niveles de dominio y evidencias para superar cada módulo de Faro.
+description: Rúbrica, niveles de dominio y evidencias para superar cada módulo de Faro.
 sidebar:
   order: 5
 ---

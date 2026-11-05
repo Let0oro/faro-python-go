@@ -1,17 +1,17 @@
 ---
-title: Faro · Campus de sistemas
- description: Aprende Python y Go con retos progresivos de procesos, redes y seguridad defensiva.
+title: Faro
+description: Campus práctico de aprendizaje en Python y Go para sistemas, redes y ciberseguridad defensiva.
 template: splash
 hero:
-  tagline: Observa el sistema. Formula una hipótesis. Pruébala en el laboratorio. Explica lo que aprendiste.
+  tagline: Aprender sistemas, no solo leer teoría.
   image:
-    alt: Faro iluminando un laboratorio de sistemas
+    alt: Faro
     file: ../../assets/faro-hero.svg
   actions:
-    - text: Entrar al campus
+    - text: Empezar
       link: /guia/roadmap/
       icon: right-arrow
-    - text: Explorar los retos
+    - text: Ver retos
       link: /guia/retos/
       icon: puzzle
       variant: minimal
@@ -19,46 +19,30 @@ hero:
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Un campus práctico, no solo documentación
+## Una ruta de aprendizaje progresiva
 
-Cada módulo sigue el ciclo **brief → práctica → pistas → solución razonada → evaluación**. Trabajas en tu equipo o VM, pasas tests y guardas las evidencias en tu portfolio.
+El campus combina observación, práctica y evaluación. Cada módulo trabaja desde un problema concreto hasta una solución verificable.
 
 <CardGrid>
-  <Card title="01 · Explora" icon="magnifier">
-    Predice lo que pasará y aprende a distinguir una observación de una suposición.
+  <Card title="Observa" icon="magnifier">
+    Comprende qué está ocurriendo antes de intentar cambiarlo.
   </Card>
-  <Card title="02 · Construye" icon="rocket">
-    Resuelve prácticas pequeñas de Python y Go: procesos, archivos, concurrencia y servicios.
+  <Card title="Practica" icon="rocket">
+    Trabaja con casos reales en Linux y localhost, sin depender de entornos externos.
   </Card>
-  <Card title="03 · Verifica" icon="approve-check">
-    Prueba casos normales y límite; comprueba errores, tiempos, recursos y carreras.
+  <Card title="Verifica" icon="approve-check">
+    Ejecuta pruebas, valida casos límite y documenta tus decisiones.
   </Card>
-  <Card title="04 · Defiende" icon="shield-check">
-    Practica con datos sintéticos en localhost. Sin sondear redes ni sistemas ajenos.
+  <Card title="Evalúa" icon="shield-check">
+    Revisa el resultado con criterios claros y evidencias reproducibles.
   </Card>
 </CardGrid>
 
-## Tu siguiente paso
+## Rutas del campus
 
 <CardGrid>
-  <LinkCard title="Roadmap del campus" href="/guia/roadmap/" description="La ruta recomendada y el orden de los módulos." />
-  <LinkCard title="Proyectos" href="/guia/proyectos/" description="Cuatro entregas de portfolio que integran los aprendizajes." />
-  <LinkCard title="Retos" href="/guia/retos/" description="Misiones breves con objetivos, pistas y pruebas de aceptación." />
-  <LinkCard title="Evaluación" href="/guia/evaluacion/" description="Rúbrica transparente, evidencias y criterios de dominio." />
+  <LinkCard title="Roadmap" href="/guia/roadmap/" description="Mapa de aprendizaje y orden recomendado." />
+  <LinkCard title="Laboratorio Python" href="/python/00-laboratorio/" description="Procesos, archivos, diagnósticos y análisis de sistemas." />
+  <LinkCard title="Servicios Go" href="/go/00-primeros-pasos/" description="Red, concurrencia, clientes y servicios robustos." />
+  <LinkCard title="Retos" href="/guia/retos/" description="Ejercicios curtos y verificables para consolidar lo aprendido." />
 </CardGrid>
-
-## Rutas de aprendizaje
-
-| Python · observar y diagnosticar | Go · construir y operar |
-|---|---|
-| [Procview](/python/01-procview/) · snapshots de procesos | [Concurrencia](/go/01-red-y-concurrencia/) · coordinación y cancelación |
-| [Árbol de procesos](/python/02-arbol-de-procesos/) · datos incompletos | [Pool de trabajadores](/go/03-pool-trabajadores/) · límite de concurrencia |
-| [Procesos hijos](/python/03-procesos-hijos/) · ejecución controlada | [HTTP robusto](/go/04-http-robusto/) · límites y validación |
-| [Integridad de archivos](/python/04-integridad-archivos/) · manifiestos reproducibles | [Capstone Go](/go/05-capstone/) · servicio local integrado |
-| [Diagnóstico de logs](/python/05-diagnostico-logs/) · eventos sintéticos | [Capstone final](/guia/capstone/) · integración de rutas |
-
-## Qué te llevas
-
-Un portfolio con herramientas y servicios pequeños, tests que verifican casos límite, notas de diseño y una explicación honesta de las limitaciones. El curso no envía tu código a un evaluador remoto: ejecutas las pruebas en tu entorno.
-
-> **Laboratorio autorizado únicamente.** La práctica de red se limita a `localhost`, fixtures o servicios que tú inicies. No pruebes redes ni sistemas de terceros.

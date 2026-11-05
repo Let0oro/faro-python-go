@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://let0oro.github.io',
-  base: '/faro-python-go/',
+  base: '/',
   integrations: [
     starlight({
       title: 'Faro',

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Faro">
+  <rect width="128" height="128" rx="24" fill="#0b1020"/>
+  <path d="M64 18 94 44v40l-30 26L34 84V44z" fill="#64d2ff" opacity=".22"/>
+  <path d="M64 31 80 45v26L64 96 48 71V45z" fill="#64d2ff"/>
+  <circle cx="64" cy="61" r="9" fill="#0b1020"/>
+</svg>

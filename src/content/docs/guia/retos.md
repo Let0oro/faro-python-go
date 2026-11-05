@@ -17,7 +17,7 @@ Usa fixtures para simular tres procesos: uno completo, otro sin `cmdline` y uno 
 
 **Investiga:** `/proc/<pid>/stat`, parsing cuidadoso y errores por registro.
 **Prueba de aceptación:** nombre con espacios; PID duplicado; raíz de fixtures inexistente; el JSON se puede parsear aun con un error individual.
-**Lección:** [Procview](/python/01-procview/).
+**Lección:** [Procview](/faro-python-go/python/01-procview/).
 
 ### Reto P2 · Familia circular
 
@@ -25,7 +25,7 @@ Crea datos sintéticos con padre ausente, PID duplicado y un ciclo. El analizado
 
 **Investiga:** grafos dirigidos, estados de visita y orden estable.
 **Prueba de aceptación:** una cadena de miles de nodos se procesa sin depender de recursión profunda.
-**Lección:** [Árbol de procesos](/python/02-arbol-de-procesos/).
+**Lección:** [Árbol de procesos](/faro-python-go/python/02-arbol-de-procesos/).
 
 ### Reto P3 · Hijo con plazo
 
@@ -33,7 +33,7 @@ Ejecuta `sys.executable` con argumentos separados y un límite temporal corto. C
 
 **Investiga:** `subprocess.run`, `TimeoutExpired`, stdout/stderr.
 **Prueba de aceptación:** el test no depende de programas instalados por el usuario ni de Internet.
-**Lección:** [Procesos hijos seguros](/python/03-procesos-hijos/).
+**Lección:** [Procesos hijos seguros](/faro-python-go/python/03-procesos-hijos/).
 
 ### Reto P4 · Huella reproducible
 
@@ -41,7 +41,7 @@ Calcula un manifiesto para una carpeta temporal con archivos vacíos, anidados y
 
 **Investiga:** SHA-256 por bloques, rutas relativas y enlaces simbólicos.
 **Prueba de aceptación:** manifiestos idénticos para el mismo árbol; ningún archivo cambia.
-**Lección:** [Integridad de archivos](/python/04-integridad-archivos/).
+**Lección:** [Integridad de archivos](/faro-python-go/python/04-integridad-archivos/).
 
 ## Estación Go · concurrencia y HTTP
 
@@ -51,7 +51,7 @@ Procesa 1.000 valores sintéticos; mide el máximo de callbacks concurrentes con
 
 **Investiga:** canales, `WaitGroup`, propiedad del cierre y `sync/atomic`.
 **Prueba de aceptación:** máximo observado ≤ límite, ningún índice repetido y `go test -race ./...` pasa.
-**Lección:** [Pool de trabajadores](/go/03-pool-trabajadores/).
+**Lección:** [Pool de trabajadores](/faro-python-go/go/03-pool-trabajadores/).
 
 ### Reto G2 · JSON bajo límite
 
@@ -59,7 +59,7 @@ Implementa el contrato HTTP de la lección: acepta el cuerpo en el límite, rech
 
 **Investiga:** `http.MaxBytesReader`, decoder estricto y códigos HTTP.
 **Prueba de aceptación:** pruebas con `httptest`; mensajes externos no incluyen errores internos.
-**Lección:** [HTTP robusto](/go/04-http-robusto/).
+**Lección:** [HTTP robusto](/faro-python-go/go/04-http-robusto/).
 
 ### Reto G3 · Apagado a mitad de trabajo
 
@@ -67,7 +67,7 @@ Inicia el worker con una tarea sintética cancelable. Solicita el apagado y veri
 
 **Investiga:** `context`, `Server.Shutdown` y ownership de goroutines.
 **Prueba de aceptación:** no hay listener público, sleeps no deterministas ni goroutines propias pendientes al terminar.
-**Lección:** [Capstone Go](/go/05-capstone/).
+**Lección:** [Capstone Go](/faro-python-go/go/05-capstone/).
 
 ## Reglas de la estación
 
