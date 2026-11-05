@@ -7,46 +7,39 @@ sidebar:
 
 ## Ruta sugerida
 
-| Bloque | Duración | Objetivo |
-| --- | --- | --- |
-| Laboratorio y entorno | 1–2 días | Preparar Python, Go y un flujo de pruebas reproducible |
-| Python: procesos | 1 semana | Leer `/proc`, extraer metadata y manejar errores |
-| Python: árboles y salud | 1 semana | Construir jerarquías y detectar estados raros |
-| Go: fundamentos | 3–4 días | Tipos, control de flujo, errores y tests |
-| Go: concurrencia y red | 1 semana | Goroutines, channels, HTTP, timeout y `-race` |
-| Seguridad defensiva | 1 semana | Validación, errores útiles y aislamiento del entorno |
-| Proyecto final | 1–2 semanas | Servicio local con pruebas, logs y seguimiento de estado |
+| Bloque | Duración | Objetivo | Lecciones |
+| --- | --- | --- | --- |
+| Laboratorio y entorno | 1–2 días | Preparar Python, Go y un flujo de pruebas reproducible | [Laboratorio](/python/00-laboratorio/) |
+| Python: procesos | 1 semana | Leer snapshots, modelar procesos y ejecutar hijos con límites | [Procview](/python/01-procview/), [Árbol](/python/02-arbol-de-procesos/), [Procesos hijos](/python/03-procesos-hijos/) |
+| Python: integridad | 2–3 días | Manifiestos reproducibles y lectura por bloques | [Integridad de archivos](/python/04-integridad-archivos/) |
+| Go: fundamentos | 3–4 días | Tipos, control de flujo, errores y tests | [Primeros pasos](/go/00-primeros-pasos/) |
+| Go: concurrencia | 1 semana | Goroutines, channels, contexto y contrapresión | [Red y concurrencia](/go/01-red-y-concurrencia/), [Pool](/go/03-pool-trabajadores/) |
+| Go: HTTP local | 1 semana | Handlers, límites, timeouts y apagado | [Servicio local](/go/02-servicio-local/), [HTTP robusto](/go/04-http-robusto/) |
+| Proyecto final | 1–2 semanas | Servicio local, herramientas de diagnóstico y revisión defensiva | Combina los niveles anteriores |
 
 ## Objetivos de dominio
 
 ### Python
 
 - leer información del sistema de forma estable y segura;
-- crear snapshots bastante buenos para diagnosticar procesos;
-- detectar datos incompletos o inconsistentes;
-- explicar qué puedes concluir y qué no.
+- crear snapshots diagnósticos sin afirmar más de lo que muestran;
+- manejar procesos hijos con argumentos explícitos y timeout;
+- producir manifiestos reproducibles sin seguir enlaces inadvertidamente.
 
 ### Go
 
-- construir servicios pequeños con un contrato claro;
+- construir servicios con contratos y límites explícitos;
 - manejar concurrencia y cancelación de manera cooperativa;
-- aplicar límites y timeouts de red;
-- validar y documentar errores antes de desplegar.
+- probar handlers sin abrir puertos de producción;
+- configurar timeouts y apagado ordenado.
 
 ### Seguridad defensiva
 
 - no confiar ciegamente en la entrada;
 - aislar el entorno de pruebas;
-- nunca revelar secretos ni datos del sistema en errores;
-- diseñar programas que fallen de forma explícita y controlada.
+- no revelar secretos ni detalles internos en errores;
+- mantener las prácticas de red en `localhost` o servicios propios.
 
 ## Recomendación de ritmo
 
-Para una semana laboral:
-
-- 2–3 horas de lectura activa;
-- 2–3 horas de práctica de código;
-- 1 hora de pruebas y documentación;
-- 30–60 minutos de revisión y autoexplicación.
-
-Si empiezas desde cero, prioriza el laboratorio y los niveles básicos antes de acelerar.
+Para una semana laboral: 2–3 horas de lectura activa, 2–3 horas de práctica, una hora de pruebas y documentación y 30–60 minutos de revisión. No avances por número de páginas: avanza cuando puedas explicar qué caso límite probaste y por qué.

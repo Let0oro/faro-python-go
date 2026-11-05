@@ -1,5 +1,5 @@
 ---
-title: Faro - Python y Go para sistemas
+title: Faro · Python y Go para sistemas
 description: Curso práctico de procesos, redes y ciberseguridad defensiva en Python y Go.
 template: splash
 hero:
@@ -20,43 +20,34 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 <CardGrid>
   <Card title="Observación" icon="magnifier">
-    Comienzas con un problema real de sistemas o procesos. Antes de leer, predices y validas hipótesis.
+    Comienzas con un problema de sistemas. Predices qué ocurrirá y separas evidencia de suposiciones.
   </Card>
   <Card title="Implementación" icon="rocket">
-    Programas pequeños, localmente, con pruebas sencillas y casos límite. No necesitas infra ni servicios externos.
+    Construyes herramientas y servicios pequeños en Python y Go, con límites definidos.
   </Card>
   <Card title="Prueba" icon="approve-check">
-    Ejecutas tests, compruebas errores, límites y condiciones de carrera; además, validas que todo termine limpio.
+    Compruebas casos normales, fallos, límites y condiciones de carrera; verificas la limpieza de recursos.
   </Card>
   <Card title="Defensa" icon="shield-check">
-    Aprendes a pensar como un sistema seguro: límites explícitos, entradas válidas, errores útiles y control del entorno.
+    Practicas validación, mínimo privilegio y aislamiento: todas las redes de práctica son locales.
   </Card>
 </CardGrid>
 
 ## Por dónde empezar
 
 <CardGrid>
-  <LinkCard title="Guía · Cómo funciona" href="/guia/como-funciona/" description="El formato del curso, las pistas y cómo usar las pruebas para aprender." />
-  <LinkCard title="Roadmap" href="/guia/roadmap/" description="Ruta sugerida, niveles, tiempos y objetivos de cada bloque." />
-  <LinkCard title="Python · Laboratorio" href="/python/00-laboratorio/" description="Preparar un entorno seguro y reproducible, sin depender de sistemas ajenos." />
-  <LinkCard title="Go · Primeros pasos" href="/go/00-primeros-pasos/" description="Concurrencia, red, errores y testing con la librería estándar de Go." />
+  <LinkCard title="Guía · Cómo funciona" href="/guia/como-funciona/" description="Método de trabajo, pistas y pruebas." />
+  <LinkCard title="Roadmap" href="/guia/roadmap/" description="Ruta de aprendizaje con objetivos y lecciones enlazadas." />
+  <LinkCard title="Python · Procview" href="/python/01-procview/" description="Lee snapshots de procesos y maneja datos imperfectos." />
+  <LinkCard title="Go · Pool de trabajadores" href="/go/03-pool-trabajadores/" description="Concurrencia acotada, cancelación y detector de carreras." />
 </CardGrid>
 
-## Bloques del curso
+## Itinerario actual
 
-- **Python para procesos y análisis local**: `/proc`, árboles de procesos, parsing y observabilidad.
-- **Go para servicios y concurrencia**: goroutines, channels, HTTP, shutdown y pruebas con `-race`.
-- **Redes y seguridad defensiva**: localhost, restricciones, límites, validación, polinización de errores y pruebas de laboratorio.
-- **Ciberseguridad aplicada**: permisos, rutas, entradas, aislamiento del entorno y errores que no filtran secretos.
+**Python:** laboratorio → procesos y snapshots → árbol de procesos → subprocess con límites → integridad de archivos.
 
-## Nivel recomendado
+**Go:** fundamentos → concurrencia y red → servicio local → pool de trabajadores → HTTP robusto.
 
-La ruta sugerida es:
+Cada lección incluye objetivos, preguntas de predicción, tests o casos que debes construir, pistas graduadas y autorrevisión. Ejecuta las pruebas en tu entorno; las páginas no envían código a un evaluador remoto.
 
-1. Preparar el laboratorio.
-2. Explorar procesos con Python.
-3. Construir un servicio local hecho en Go.
-4. Revisar concurrencia, red y pruebas.
-5. Entrenar la seguridad defensiva antes de avanzar a más complejidad.
-
-> También se incluyen pequeñas pistas de investigación y retos de prueba en cada bloque para emular la sensación de un wargame de aprendizaje.
+> **Laboratorio autorizado únicamente.** Los ejemplos de red se limitan a `localhost`, fixtures o servicios que tú inicies. No pruebes redes ni sistemas de terceros.
