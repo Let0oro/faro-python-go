@@ -41,7 +41,7 @@ Te acerca a la estructura: un diseño, un tipo, una función o un patrón concre
 <details>
 <summary>Solución</summary>
 
-Te da la referencia, pero no sustituye tu intento. La mejor práctica es volver a implementarlo con tus propias palabras.
+La solución de referencia es un punto de comparación, no un sustituto de tu intento. Si la consultas, vuelve a implementar sin copiar y añade un test para el caso que te había bloqueado.
 
 </details>
 

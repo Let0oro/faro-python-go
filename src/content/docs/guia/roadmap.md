@@ -9,12 +9,12 @@ sidebar:
 
 | Bloque | Duración | Objetivo |
 | --- | --- | --- |
-| Laboratorio y entorno | 1–2 días | Preparar Python, Go y un flujo de pruebas reproducible | 
-| Python: procesos | 1 semana | Leer `/proc`, extraer metadata y manejar errores | 
-| Python: árboles y salud | 1 semana | Construir jerarquías y detectar estados raros | 
-| Go: fundamentos | 3–4 días | Tipos, control de flujo, errores y tests | 
-| Go: concurrencia y red | 1 semana | Goroutines, channels, HTTP, timeout y `-race` | 
-| Seguridad defensiva | 1 semana | Validación, errores útiles y aislamiento del entorno | 
+| Laboratorio y entorno | 1–2 días | Preparar Python, Go y un flujo de pruebas reproducible |
+| Python: procesos | 1 semana | Leer `/proc`, extraer metadata y manejar errores |
+| Python: árboles y salud | 1 semana | Construir jerarquías y detectar estados raros |
+| Go: fundamentos | 3–4 días | Tipos, control de flujo, errores y tests |
+| Go: concurrencia y red | 1 semana | Goroutines, channels, HTTP, timeout y `-race` |
+| Seguridad defensiva | 1 semana | Validación, errores útiles y aislamiento del entorno |
 | Proyecto final | 1–2 semanas | Servicio local con pruebas, logs y seguimiento de estado |
 
 ## Objetivos de dominio
