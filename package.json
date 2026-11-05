@@ -1,0 +1,14 @@
+{
+  "name": "faro-python-go",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.4",
+    "astro": "^7.2.10"
+  }
+}

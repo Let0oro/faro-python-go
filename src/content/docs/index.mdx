@@ -1,0 +1,62 @@
+---
+title: Faro - Python y Go para sistemas
+description: Curso práctico de procesos, redes, sistemas y ciberseguridad defensiva en Python y Go.
+template: splash
+hero:
+  tagline: Aprender procesos, redes y seguridad desde la observación, la prueba y la explicación.
+  actions:
+    - text: Cómo funciona
+      link: /guia/como-funciona/
+      icon: right-arrow
+    - text: Ver roadmap
+      link: /guia/roadmap/
+      icon: document
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## El método del curso
+
+<CardGrid>
+  <Card title="Observación" icon="magnifier">
+    Comienzas con un problema real de sistemas o procesos. Antes de leer, predices y validas hipótesis.
+  </Card>
+  <Card title="Implementación" icon="rocket">
+    Programas pequeños, localmente, con pruebas sencillas y casos límite. No necesitas infra ni servicios externos.
+  </Card>
+  <Card title="Prueba" icon="approve-check">
+    Ejecutas tests, compruebas errores, límites y condiciones de carrera; además, validas que todo termine limpio.
+  </Card>
+  <Card title="Defensa" icon="shield-check">
+    Aprendes a pensar como un sistema seguro: límites explícitos, entradas válidas, errores útiles y control del entorno.
+  </Card>
+</CardGrid>
+
+## Por dónde empezar
+
+<CardGrid>
+  <LinkCard title="Guía · Cómo funciona" href="/guia/como-funciona/" description="El formato del curso, las pistas y cómo usar las pruebas para aprender." />
+  <LinkCard title="Roadmap" href="/guia/roadmap/" description="Ruta sugerida, niveles, tiempos y objetivos de cada bloque." />
+  <LinkCard title="Python · Laboratorio" href="/python/00-laboratorio/" description="Preparar un entorno seguro y reproducible, sin depender de sistemas ajenos." />
+  <LinkCard title="Go · Primeros pasos" href="/go/00-primeros-pasos/" description="Concurrencia, red, errores y testing con la librería estándar de Go." />
+</CardGrid>
+
+## Bloques del curso
+
+- **Python para procesos y análisis local**: `/proc`, árboles de procesos, parsing y observabilidad.
+- **Go para servicios y concurrencia**: goroutines, channels, HTTP, shutdown y pruebas con `-race`.
+- **Redes y seguridad defensiva**: localhost, restricciones, límites, validación, polinización de errores y pruebas de laboratorio.
+- **Ciberseguridad aplicada**: permisos, rutas, entradas, aislamiento del entorno y errores que no filtran secretos.
+
+## Nivel recomendado
+
+La ruta sugerida es:
+
+1. Preparar el laboratorio.
+2. Explorar procesos con Python.
+3. Construir un servicio local hecho en Go.
+4. Revisar concurrencia, red y pruebas.
+5. Entrenar la seguridad defensiva antes de avanzar a más complejidad.
+
+> También se incluyen pequeñas pistas de investigación y retos de prueba en cada bloque para emular la sensación de un wargame de aprendizaje.

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --sl-color-bg: #0b1020;
+  --sl-color-bg-nav: #111827;
+  --sl-color-bg-sidebar: #0f172a;
+  --sl-color-accent: #64d2ff;
+  --sl-color-accent-high: #8af5ff;
+  --sl-color-text: #e5eefb;
+  --sl-color-text-accent: #9fe8ff;
+  --sl-color-gray-1: #dfe7f4;
+  --sl-color-gray-2: #b6c4d8;
+  --sl-color-gray-3: #7b8ca8;
+  --sl-color-border: rgba(148, 163, 184, 0.25);
+  --sl-content-width: 72rem;
+  --hero-glow: rgba(100, 210, 255, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(100, 210, 255, 0.15), transparent 32%),
+    linear-gradient(180deg, #0b1020 0%, #111827 100%);
+}
+
+.site-title {
+  letter-spacing: 0.02em;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 10% 20%, var(--hero-glow), transparent 25%);
+  pointer-events: none;
+}
+
+.sl-markdown-content details {
+  border: 1px solid var(--sl-color-border);
+  border-radius: 0.8rem;
+  background: rgba(15, 23, 42, 0.7);
+  padding: 0.5rem 0.8rem;
+  margin: 1rem 0;
+}
+
+.sl-markdown-content summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sl-markdown-content pre {
+  border: 1px solid var(--sl-color-border);
+  border-radius: 0.8rem;
+}
+
+.sl-markdown-content code {
+  font-size: 0.92em;
+}
+
+.card {
+  border: 1px solid var(--sl-color-border);
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.85);
+  padding: 1rem 1.1rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card strong {
+  color: var(--sl-color-text-accent);
+}
+
+.callout {
+  border-left: 4px solid var(--sl-color-accent);
+  background: rgba(100, 210, 255, 0.08);
+  padding: 0.9rem 1rem;
+  border-radius: 0.7rem;
+}
