@@ -18,7 +18,8 @@ export default defineConfig({
           items: [
             { label: 'Cómo funciona', link: '/guia/como-funciona/' },
             { label: 'Roadmap', link: '/guia/roadmap/' },
-            { label: 'Retos y estilo', link: '/guia/retos/' }
+            { label: 'Retos y estilo', link: '/guia/retos/' },
+            { label: 'Capstone final', link: '/guia/capstone/' }
           ]
         },
         {
@@ -28,7 +29,8 @@ export default defineConfig({
             { label: 'Procview', link: '/python/01-procview/' },
             { label: 'Árbol de procesos', link: '/python/02-arbol-de-procesos/' },
             { label: 'Procesos hijos seguros', link: '/python/03-procesos-hijos/' },
-            { label: 'Integridad de archivos', link: '/python/04-integridad-archivos/' }
+            { label: 'Integridad de archivos', link: '/python/04-integridad-archivos/' },
+            { label: 'Diagnóstico de logs', link: '/python/05-diagnostico-logs/' }
           ]
         },
         {
@@ -38,7 +40,8 @@ export default defineConfig({
             { label: 'Red y concurrencia', link: '/go/01-red-y-concurrencia/' },
             { label: 'Servicio local', link: '/go/02-servicio-local/' },
             { label: 'Pool de trabajadores', link: '/go/03-pool-trabajadores/' },
-            { label: 'HTTP robusto', link: '/go/04-http-robusto/' }
+            { label: 'HTTP robusto', link: '/go/04-http-robusto/' },
+            { label: 'Capstone Go', link: '/go/05-capstone/' }
           ]
         }
       ],
