@@ -2,105 +2,99 @@
 
 :root {
   --sl-color-bg: #07111a;
-  --sl-color-bg-nav: #0d1b2a;
-  --sl-color-bg-sidebar: #0b1725;
+  --sl-color-bg-nav: #0b1825;
+  --sl-color-bg-sidebar: #091622;
   --sl-color-accent: #67e8f9;
   --sl-color-accent-high: #a5f3fc;
   --sl-color-text: #e6f7ff;
   --sl-color-text-accent: #b9f6ff;
-  --sl-color-gray-1: #dfeaf4;
+  --sl-color-gray-1: #e7f2f8;
   --sl-color-gray-2: #b9c9d9;
   --sl-color-gray-3: #7c8ea3;
-  --sl-color-border: rgba(103, 232, 249, 0.22);
+  --sl-color-border: rgba(103, 232, 249, 0.19);
   --sl-content-width: 76rem;
-  --hero-glow: rgba(103, 232, 249, 0.18);
-  --sl-shadow-sm: 0 10px 25px rgba(8, 15, 26, 0.24);
+  --hero-glow: rgba(103, 232, 249, 0.2);
+  --campus-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', sans-serif;
   background:
-    radial-gradient(circle at top, rgba(103, 232, 249, 0.12), transparent 30%),
-    linear-gradient(180deg, #07111a 0%, #0d1725 100%);
+    radial-gradient(ellipse at 50% -10%, rgba(32, 113, 141, 0.2), transparent 42%),
+    linear-gradient(180deg, #07111a 0%, #0b1724 100%);
 }
 
-.site-title {
-  letter-spacing: 0.02em;
-}
-
-.card-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
+.site-title { letter-spacing: 0.035em; font-weight: 800; }
 
 .hero {
   position: relative;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 10% 20%, var(--hero-glow), transparent 25%);
+  inset: -15%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 22% 45%, rgba(103, 232, 249, 0.22), transparent 24%),
+    radial-gradient(circle at 78% 32%, rgba(96, 165, 250, 0.12), transparent 25%);
   pointer-events: none;
 }
 
-.sl-markdown-content details {
-  border: 1px solid var(--sl-color-border);
-  border-radius: 1rem;
-  background: rgba(11, 23, 37, 0.78);
-  padding: 0.7rem 0.9rem;
-  margin: 1rem 0;
-  box-shadow: var(--sl-shadow-sm);
-}
+.hero img { filter: drop-shadow(0 18px 48px rgba(34, 211, 238, 0.16)); }
 
-.sl-markdown-content summary {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--sl-color-text);
-}
-
-.sl-markdown-content pre {
-  border: 1px solid var(--sl-color-border);
-  border-radius: 0.9rem;
-  box-shadow: var(--sl-shadow-sm);
-}
-
-.sl-markdown-content code {
-  font-size: 0.92em;
-}
+.card-grid { gap: 1rem; }
 
 .card {
   border: 1px solid var(--sl-color-border);
   border-radius: 1.1rem;
-  background: rgba(12, 24, 38, 0.82);
-  padding: 1.1rem 1.2rem;
-  box-shadow: var(--sl-shadow-sm);
+  background: linear-gradient(145deg, rgba(17, 36, 53, 0.92), rgba(9, 22, 34, 0.94));
+  box-shadow: var(--campus-shadow);
 }
 
-.card strong {
-  color: var(--sl-color-text-accent);
-}
-
-.callout {
-  border-left: 4px solid var(--sl-color-accent);
-  background: rgba(103, 232, 249, 0.08);
-  padding: 0.95rem 1rem;
-  border-radius: 0.8rem;
-}
+.card strong { color: var(--sl-color-text-accent); }
 
 .sl-link-card {
   border: 1px solid var(--sl-color-border) !important;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  border-radius: 1rem !important;
+  background: linear-gradient(145deg, rgba(16, 34, 50, 0.94), rgba(9, 22, 34, 0.94)) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
 .sl-link-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(103, 232, 249, 0.55) !important;
+  transform: translateY(-3px);
+  border-color: rgba(103, 232, 249, 0.52) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.27);
+}
+
+.sl-markdown-content details {
+  border: 1px solid var(--sl-color-border);
+  border-radius: 0.9rem;
+  background: rgba(10, 25, 38, 0.88);
+  padding: 0.7rem 0.95rem;
+  margin: 1rem 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.sl-markdown-content summary { cursor: pointer; font-weight: 700; }
+.sl-markdown-content pre { border: 1px solid var(--sl-color-border); border-radius: 0.9rem; box-shadow: var(--campus-shadow); }
+.sl-markdown-content code { font-size: 0.92em; }
+
+.sl-markdown-content table { display: table; width: 100%; }
+.sl-markdown-content th { color: var(--sl-color-text-accent); }
+
+.sl-markdown-content blockquote {
+  border-inline-start-color: var(--sl-color-accent);
+  background: rgba(103, 232, 249, 0.055);
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
 }

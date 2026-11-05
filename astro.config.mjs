@@ -7,23 +7,25 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Faro',
-      description: 'Curso práctico de Python y Go para procesos, redes y ciberseguridad defensiva.',
+      description: 'Campus práctico de Python y Go para procesos, redes y ciberseguridad defensiva.',
       defaultLocale: 'root',
       locales: { root: { label: 'Español', lang: 'es' } },
       customCss: ['./src/styles/global.css'],
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Let0oro/faro-python-go' }],
       sidebar: [
         {
-          label: 'Guía',
+          label: 'Campus',
           items: [
             { label: 'Cómo funciona', link: '/guia/como-funciona/' },
             { label: 'Roadmap', link: '/guia/roadmap/' },
-            { label: 'Retos y estilo', link: '/guia/retos/' },
+            { label: 'Proyectos', link: '/guia/proyectos/' },
+            { label: 'Retos', link: '/guia/retos/' },
+            { label: 'Evaluación', link: '/guia/evaluacion/' },
             { label: 'Capstone final', link: '/guia/capstone/' }
           ]
         },
         {
-          label: 'Python',
+          label: 'Python · Laboratorio',
           items: [
             { label: 'Preparar el laboratorio', link: '/python/00-laboratorio/' },
             { label: 'Procview', link: '/python/01-procview/' },
@@ -34,7 +36,7 @@ export default defineConfig({
           ]
         },
         {
-          label: 'Go',
+          label: 'Go · Servicios',
           items: [
             { label: 'Primeros pasos', link: '/go/00-primeros-pasos/' },
             { label: 'Red y concurrencia', link: '/go/01-red-y-concurrencia/' },
