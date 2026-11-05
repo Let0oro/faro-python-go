@@ -4,6 +4,9 @@ description: Curso práctico de procesos, redes y ciberseguridad defensiva en Py
 template: splash
 hero:
   tagline: Aprender procesos, redes y seguridad desde la observación, la prueba y la explicación.
+  image:
+    alt: Faro
+    file: ../../assets/faro-hero.svg
   actions:
     - text: Cómo funciona
       link: /guia/como-funciona/
@@ -23,7 +26,7 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
     Comienzas con un problema de sistemas. Predices qué ocurrirá y separas evidencia de suposiciones.
   </Card>
   <Card title="Implementación" icon="rocket">
-    Construyes herramientas y servicios pequeños en Python y Go, con límites definidos.
+    Construyes herramientas y servicios pequeños en Python y Go, con límites definidos y pruebas locales.
   </Card>
   <Card title="Prueba" icon="approve-check">
     Compruebas casos normales, fallos, límites y condiciones de carrera; verificas la limpieza de recursos.
@@ -37,7 +40,7 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 <CardGrid>
   <LinkCard title="Guía · Cómo funciona" href="/guia/como-funciona/" description="Método de trabajo, pistas y pruebas." />
-  <LinkCard title="Roadmap" href="/guia/roadmap/" description="Ruta de aprendizaje con objetivos y lecciones enlazadas." />
+  <LinkCard title="Roadmap" href="/guia/roadmap/" description="Ruta completa del curso con objetivos y lecciones." />
   <LinkCard title="Python · Procview" href="/python/01-procview/" description="Lee snapshots de procesos y maneja datos imperfectos." />
   <LinkCard title="Go · Pool de trabajadores" href="/go/03-pool-trabajadores/" description="Concurrencia acotada, cancelación y detector de carreras." />
   <LinkCard title="Capstone final" href="/guia/capstone/" description="Proyecto integrado con servicio local, logs y revisión final." />
@@ -49,6 +52,14 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 **Go:** fundamentos → concurrencia y red → servicio local → pool de trabajadores → HTTP robusto → capstone.
 
-Cada lección incluye objetivos, preguntas de predicción, tests o casos que debes construir, pistas graduadas y autorrevisión. Ejecuta las pruebas en tu entorno; las páginas no envían código a un evaluador remoto.
+## Matriz de competencias
+
+- Observabilidad: interpretar procesos, logs, errores y estados.
+- Sistemas: entender límites, tiempos, recursos y errores deterministas.
+- Seguridad defensiva: validación de entrada, aislamiento local y no filtrar secretos.
+- Servicio local: HTTP, contextos, timeouts y pruebas.
+- Práctica de ingeniería: pruebas frágiles vs pruebas útiles, diseño mínimo y explicación.
+
+Cada lección incluye objetivos, preguntas de predicción, pistas graduadas y autorrevisión. Ejecuta las pruebas en tu entorno; las páginas no envían código a un evaluador remoto.
 
 > **Laboratorio autorizado únicamente.** Los ejemplos de red se limitan a `localhost`, fixtures o servicios que tú inicies. No pruebes redes ni sistemas de terceros.
