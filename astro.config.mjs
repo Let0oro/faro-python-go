@@ -2,12 +2,15 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
+  // Project Pages serves this repository below /faro-python-go/.
+  // Keep internal sidebar/content links relative to the site root (e.g. /guia/...),
+  // and let Astro apply `base` exactly once.
   site: 'https://let0oro.github.io',
-  base: '/',
+  base: '/faro-python-go/',
   integrations: [
     starlight({
       title: 'Faro',
-      description: 'Campus práctico de Python y Go para procesos, redes y ciberseguridad defensiva.',
+      description: 'Campus práctico de aprendizaje en Python y Go para procesos, redes y ciberseguridad defensiva.',
       defaultLocale: 'root',
       locales: { root: { label: 'Español', lang: 'es' } },
       customCss: ['./src/styles/global.css'],
